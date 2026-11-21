@@ -41,7 +41,7 @@ class LinkedList(MutableSequence):
         current.value = value
 
     def __delitem__(self, index):
-         if index < 0:
+        if index < 0:
             index += self._length
         if index < 0 or index >= self._length:
             raise IndexError("Index out of range")
@@ -55,7 +55,7 @@ class LinkedList(MutableSequence):
         self._length -= 1
 
     def insert(self, index, value):
-         if index < 0:
+        if index < 0:
             index += self._length
             if index < 0:
                 index = 0
